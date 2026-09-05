@@ -4,6 +4,7 @@ public class Professor {
     private Long id;
     private String nome;
     private String email;
+    private boolean ativo = true;
 
     public Professor() {
     }
@@ -11,6 +12,21 @@ public class Professor {
     public Professor(String nome, String email) {
         this.nome = nome;
         this.email = email;
+    }
+
+    public Professor(long l, String nome, String mail) {
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public boolean isAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(boolean ativo) {
+        this.ativo = ativo;
     }
 
     public Long getId() {
