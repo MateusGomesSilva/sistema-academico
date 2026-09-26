@@ -23,4 +23,7 @@ public class AlunoController {
         return service.buscarPorid(id);
     }
 
+    public void excluir(Long id){
+        service.excluir(id);
+    }
 }

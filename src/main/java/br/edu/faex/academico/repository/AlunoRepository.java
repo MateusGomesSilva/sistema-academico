@@ -22,4 +22,13 @@ public class AlunoRepository {
         }
         return null;
     }
+    public void excluir(Long id){
+        for(Aluno aluno: alunos){
+            if(aluno.getId().equals(id)){
+                alunos.remove(aluno);
+                System.out.println("Aluno deletado");;
+                return;
+            }
+        }
+    }
 }
